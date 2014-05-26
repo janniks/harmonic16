@@ -1,0 +1,81 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, "Lato", Calibri, sans-serif;
+  background: #EDEFF0;
+  color: #384047 !important; }
+
+div.content {
+  font-size: 0;
+  padding-top: 15px;
+  width: 97.5%;
+  margin: auto;
+  max-width: 480px; }
+  div.content div {
+    font-size: 16px; }
+  div.content div.row {
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0; }
+  div.content label {
+    display: inline-block;
+    margin-bottom: 20px; }
+  div.content #hue, div.content #fun, div.content #sat, div.content #val, div.content #ind {
+    width: 90%;
+    float: left;
+    margin: 0;
+    padding: 0; }
+  div.content input[type="number"] {
+    height: 13px;
+    width: 7.5%;
+    margin: 0;
+    padding: 0;
+    float: right;
+    display: inline; }
+  div.content div#base00, div.content div#base01, div.content div#base02, div.content div#base03, div.content div#base04, div.content div#base05, div.content div#base06, div.content div#base07, div.content div#base08, div.content div#base09, div.content div#base0A, div.content div#base0B, div.content div#base0C, div.content div#base0D, div.content div#base0E, div.content div#base0F {
+    height: 60px;
+    width: 12.5%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background-color: orange;
+    clear: both; }
+  div.content a.export {
+    display: inline-block;
+    font-size: 16px;
+    height: 30px;
+    width: 75px;
+    padding: 0;
+    margin-left: 15px;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    background: orange;
+    float: right;
+    clear: both; }
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: 1px solid #9A9A9A !important;
+  height: 21px !important;
+  width: 21px !important;
+  border-radius: 11px !important;
+  background-color: #E2E5E8 !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(silver)) !important;
+  background-image: -webkit-linear-gradient(top, whitesmoke, silver) !important;
+  background-image: -moz-linear-gradient(top, whitesmoke, silver) !important;
+  background-image: -o-linear-gradient(top, whitesmoke, silver) !important;
+  background-image: -ms-linear-gradient(top, whitesmoke, silver) !important;
+  background-image: linear-gradient(top, whitesmoke, silver) !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f5f5f5', EndColorStr='#c0c0c0') !important; }
+
+input[type="number"] {
+  text-indent: 3px;
+  border-radius: 2px;
+  border: 1px solid #9A9A9A;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }

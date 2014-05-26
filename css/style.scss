@@ -1,0 +1,110 @@
+//POSITIONING and SIZING
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+
+	font-family: Lato, "Lato", Calibri, sans-serif;
+
+	background: #EDEFF0;
+	color: #384047 !important;
+}
+div.content {
+	font-size: 0;
+	padding-top: 15px;
+	width: 97.5%;
+	margin: auto;
+	max-width: 480px;
+
+	div {
+		font-size: 16px;
+	}
+	div.row {
+		height: 50px;
+		width: 100%;
+
+		margin: 0;
+		padding: 0;
+	}
+
+	label {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+
+	#hue, #fun, #sat, #val, #ind {
+		width: 90%;
+		float: left;
+		margin: 0;
+		padding: 0;
+
+	}
+
+	input[type="number"] {
+		height: 13px;
+		width: 7.5%;
+		margin: 0;
+		padding: 0;
+
+		float: right;
+
+		display: inline;
+	}
+
+	div#base00, div#base01, div#base02, div#base03, div#base04, div#base05, div#base06, div#base07, div#base08, div#base09, div#base0A, div#base0B, div#base0C, div#base0D, div#base0E, div#base0F {
+		height: 60px;
+		width: 12.5%;
+		padding: 0;
+		margin: 0;
+		display: inline-block;
+		background-color: orange;
+		clear: both;
+	}
+
+	a.export {
+		display: inline-block;
+		font-size: 16px;
+		height: 30px;
+		width: 75px;
+		padding: 0;
+		margin-left: 15px;
+		margin-top: 15px;
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		padding-top: 10px;
+		background: orange;
+
+		float: right;
+		clear: both;
+	}
+}
+
+//STYLE
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+	border: 1px solid #9A9A9A !important;
+
+	height: 21px !important;
+	width: 21px !important;
+
+	border-radius: 11px !important;
+	
+	background-color: #E2E5E8 !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(245, 245, 245)), to(rgb(192, 192, 192))) !important;
+	background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(192, 192, 192)) !important;
+	background-image: -moz-linear-gradient(top, rgb(245, 245, 245), rgb(192, 192, 192)) !important;
+	background-image: -o-linear-gradient(top, rgb(245, 245, 245), rgb(192, 192, 192)) !important;
+	background-image: -ms-linear-gradient(top, rgb(245, 245, 245), rgb(192, 192, 192)) !important;
+	background-image: linear-gradient(top, rgb(245, 245, 245), rgb(192, 192, 192)) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f5f5f5', EndColorStr='#c0c0c0') !important;	
+}
+
+input[type="number"] {
+	text-indent: 3px;
+	border-radius: 2px;
+	border: 1px solid #9A9A9A;
+
+	-webkit-appearance: none;
+	-moz-appearance:    none;
+	appearance:         none;
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>colorMaker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+
+		<!-- style -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+		<!-- colorMaker -->
+		<script src="js/colors.js"></script>
+		<script src="js/pusher.color.min.js"></script>
+		<script src="js/FileSaver.js"></script>
+
+		<!-- external -->
+		<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+		<!-- sliders -->
+		<script src="js/sliders.js"></script>
+		<script src="js/punch.js"></script>
+	</head>
+	<body>
+		<div class="content">
+		<div class="control">
+		
+			<!-- SLIDERS -->
+			<div class="row">
+				<div id="hue"></div>
+				<input type="number" onChange="updateLabel('hue');" id="hue_label">
+			</div>
+			<div class="row">
+				<div id="fun"></div>
+				<input type="number" onChange="updateLabel('fun');" id="fun_label">
+			</div>
+			<div class="row">
+				<div id="sat"></div>
+				<input type="number" onChange="updateLabel('sat');" id="sat_label">
+			</div>
+			<div class="row">
+				<div id="val"></div>
+				<input type="number" onChange="updateLabel('val');" id="val_label">
+			</div>
+			<div class="row">
+				<div id="ind"></div>
+				<input type="number" onChange="updateLabel('ind');" id="ind_label">					
+			</div>
+
+			<!-- CHECKBOXES -->
+			<label><input type="checkbox" name="switch" id="switch" value="switch" onChange="refresh();">
+				2 Hues in Base Colors
+			</label>
+			<label><input type="checkbox" name="comp" id="comp" value="comp" checked="checked" onChange="refresh();">
+				Complement Bases
+			</label>
+			<label><input type="checkbox" name="indv" id="indv" value="indv" checked="checked" onChange="hideIndividual('ind');">
+				Individual Saturation
+			</label>
+			
+		</div>
+
+		<div id="base00"></div>
+		<div id="base01"></div>
+		<div id="base02"></div>
+		<div id="base03"></div>
+		<div id="base04"></div>
+		<div id="base05"></div>
+		<div id="base06"></div>
+		<div id="base07"></div>
+
+		<div id="base08"></div>
+		<div id="base09"></div>
+		<div id="base0A"></div>
+		<div id="base0B"></div>
+		<div id="base0C"></div>
+		<div id="base0D"></div>
+		<div id="base0E"></div>
+		<div id="base0F"></div>
+
+		<a class="export" onClick="makeFile();" href="#">Export</a>
+		</div>
+	</body>
+</html>
