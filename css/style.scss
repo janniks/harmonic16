@@ -9,6 +9,7 @@ body {
 	background: #EDEFF0;
 	color: #384047 !important;
 }
+
 div.content {
 	font-size: 0;
 	padding-top: 15px;
@@ -77,6 +78,15 @@ div.content {
 
 		float: right;
 		clear: both;
+	}
+	
+	p {
+		display: block;
+		font-size: 16px;
+
+		a {	
+			color: #384047;
+		}
 	}
 }
 

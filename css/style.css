@@ -57,6 +57,11 @@ div.content {
     background: orange;
     float: right;
     clear: both; }
+  div.content p {
+    display: block;
+    font-size: 16px; }
+    div.content p a {
+      color: #384047; }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: 1px solid #9A9A9A !important;
