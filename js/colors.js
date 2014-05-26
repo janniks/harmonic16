@@ -84,7 +84,7 @@ function generateBases(baseHue) {
 	}
 
 	//return array
-	return bases;
+	return bases.reverse();
 }
 
 function getSlider(name) {
