@@ -146,36 +146,7 @@ function generate() {
 	return new Array(allColors, descriptors);
 }
 
-//generate file
-
-
-// (function () {
-// var textFile = null,
-//   makeTextFile = function (text) {
-//     var data = new Blob([text], {type: 'text/plain'});
-
-//     // If we are replacing a previously generated file we need to
-//     // manually revoke the object URL to avoid memory leaks.
-//     if (textFile !== null) {
-//       window.URL.revokeObjectURL(textFile);
-//     }
-
-//     textFile = window.URL.createObjectURL(data);
-
-//     return textFile;
-//   };
-
-
-//   var create = document.getElementById('create'),
-//     textbox = document.getElementById('textbox');
-
-//   create.addEventListener('click', function () {
-//     var link = document.getElementById('downloadlink');
-//     link.href = makeTextFile(textbox.value);
-//     link.style.display = 'block';
-//   }, false);
-// })();
-
+//Builder
 function makeText(holder) {
 	var string = "# generated with harmonic16 (https://github.com/janniks/harmonic16)\n";
 	string += 'scheme: "harmonic16"\n';
@@ -192,4 +163,21 @@ function makeFile() {
 
 	var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
 	saveAs(blob, "base16.yml");
+}
+
+//Sass
+function makeSass() {
+	//text
+	var text = "// generated with harmonic16 (github.com/janniks/harmonic16)\n";
+	text += '// usage: @import \'colors\';\n';
+
+	//generate
+	var holder = generate();
+	for (var i = 0; i < holder[0].length; i++) {
+		text += '$' + holder[1][i] + ': ' + holder[0][i] + ';\n';
+	}
+
+	//file
+	var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
+	saveAs(blob, "_colors.scss");
 }
