@@ -84,3 +84,10 @@ input[type="number"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
+
+.fork_me {
+  visibility: hidden; }
+
+@media only screen and (min-width: 550px) {
+  .fork_me {
+    visibility: visible; } }
