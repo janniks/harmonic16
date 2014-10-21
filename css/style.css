@@ -6,35 +6,35 @@ body {
   background: #EDEFF0;
   color: #384047 !important; }
 
-div.content {
+body div.content {
   font-size: 0;
   padding-top: 15px;
   width: 97.5%;
   margin: auto;
   max-width: 480px; }
-  div.content div {
+  body div.content div {
     font-size: 16px; }
-  div.content div.row {
+  body div.content div.row {
     height: 50px;
     width: 100%;
     margin: 0;
     padding: 0; }
-  div.content label {
+  body div.content label {
     display: inline-block;
     margin-bottom: 20px; }
-  div.content #hue, div.content #fun, div.content #sat, div.content #val, div.content #ind {
+  body div.content #hue, body div.content #fun, body div.content #sat, body div.content #val, body div.content #ind {
     width: 90%;
     float: left;
     margin: 0;
     padding: 0; }
-  div.content input[type="number"] {
+  body div.content input[type="number"] {
     height: 13px;
     width: 7.5%;
     margin: 0;
     padding: 0;
     float: right;
     display: inline; }
-  div.content div#base00, div.content div#base01, div.content div#base02, div.content div#base03, div.content div#base04, div.content div#base05, div.content div#base06, div.content div#base07, div.content div#base08, div.content div#base09, div.content div#base0A, div.content div#base0B, div.content div#base0C, div.content div#base0D, div.content div#base0E, div.content div#base0F {
+  body div.content div#base00, body div.content div#base01, body div.content div#base02, body div.content div#base03, body div.content div#base04, body div.content div#base05, body div.content div#base06, body div.content div#base07, body div.content div#base08, body div.content div#base09, body div.content div#base0A, body div.content div#base0B, body div.content div#base0C, body div.content div#base0D, body div.content div#base0E, body div.content div#base0F {
     height: 60px;
     width: 12.5%;
     padding: 0;
@@ -42,7 +42,7 @@ div.content {
     display: inline-block;
     background-color: orange;
     clear: both; }
-  div.content a.export {
+  body div.content a.export {
     display: inline-block;
     font-size: 16px;
     height: 30px;
@@ -57,11 +57,56 @@ div.content {
     background: orange;
     float: right;
     clear: both; }
-  div.content p {
+  body div.content p {
     display: block;
     font-size: 16px; }
-    div.content p a {
+    body div.content p a {
       color: #384047; }
+  body div.content div.preview {
+    width: 100%;
+    margin-top: 100px;
+    padding: 0;
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #333; }
+    body div.content div.preview div.preview-pop {
+      width: 90%;
+      max-width: 320px;
+      margin: auto;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      padding: 0;
+      border-radius: 5px;
+      border: 1px solid #555; }
+      body div.content div.preview div.preview-pop div.preview-header {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #555; }
+        body div.content div.preview div.preview-pop div.preview-header div.preview-title {
+          padding: 7px 10px; }
+      body div.content div.preview div.preview-pop div.preview-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid #555; }
+        body div.content div.preview div.preview-pop div.preview-content div.preview-text {
+          padding: 7px 10px; }
+      body div.content div.preview div.preview-pop div.preview-footer {
+        overflow: hidden; }
+        body div.content div.preview div.preview-pop div.preview-footer button {
+          float: right;
+          margin: 5px;
+          padding: 7px;
+          border-radius: 3px; }
+        body div.content div.preview div.preview-pop div.preview-footer button.preview-deny {
+          border: 1px solid #aaa;
+          color: #fff;
+          background: #aaa; }
+        body div.content div.preview div.preview-pop div.preview-footer button.preview-accept {
+          border: 1px solid #aaa;
+          color: #aaa;
+          background: #fff; }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
   border: 1px solid #9A9A9A !important;

@@ -10,7 +10,7 @@ body {
 	color: #384047 !important;
 }
 
-div.content {
+body div.content {
 	font-size: 0;
 	padding-top: 15px;
 	width: 97.5%;
@@ -27,20 +27,16 @@ div.content {
 		margin: 0;
 		padding: 0;
 	}
-
 	label {
 		display: inline-block;
 		margin-bottom: 20px;
 	}
-
 	#hue, #fun, #sat, #val, #ind {
 		width: 90%;
 		float: left;
 		margin: 0;
 		padding: 0;
-
 	}
-
 	input[type="number"] {
 		height: 13px;
 		width: 7.5%;
@@ -51,7 +47,6 @@ div.content {
 
 		display: inline;
 	}
-
 	div#base00, div#base01, div#base02, div#base03, div#base04, div#base05, div#base06, div#base07, div#base08, div#base09, div#base0A, div#base0B, div#base0C, div#base0D, div#base0E, div#base0F {
 		height: 60px;
 		width: 12.5%;
@@ -61,7 +56,6 @@ div.content {
 		background-color: orange;
 		clear: both;
 	}
-
 	a.export {
 		display: inline-block;
 		font-size: 16px;
@@ -79,7 +73,6 @@ div.content {
 		float: right;
 		clear: both;
 	}
-	
 	p {
 		display: block;
 		font-size: 16px;
@@ -87,6 +80,79 @@ div.content {
 		a {	
 			color: #384047;
 		}
+	}
+
+	// preview
+	div.preview {
+		width: 100%;
+		margin-top: 100px;
+		padding: 0;
+
+		background: white;
+		border-radius: 5px;
+		border: 1px solid #333;
+
+		div.preview-pop {
+			width: 90%;
+			max-width: 320px;
+			margin: auto;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			padding: 0;
+
+			border-radius: 5px;
+			border: 1px solid #555;
+
+			div.preview-header {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				border-bottom: 1px solid #555;
+
+				div.preview-title {
+					padding: 7px 10px;
+				}
+			}
+
+			div.preview-content {
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				border-bottom: 1px solid #555;
+
+				div.preview-text {
+					padding: 7px 10px;
+				}
+			}
+
+			div.preview-footer {
+				overflow: hidden;	// clearfix
+
+				button {
+					float: right;
+					margin: 5px;
+					padding: 7px;
+
+					border-radius: 3px;
+				}
+
+				button.preview-deny {
+					border: 1px solid #aaa;
+					color: #fff;
+					background: #aaa;
+				}
+
+				button.preview-accept {
+					border: 1px solid #aaa;
+					color: #aaa;
+					background: #fff;
+				}
+			}
+		}
+
+	}
+	.base00, .base01, .base02, .base03, .base04, .base05, .base06, .base07, .base08, .base09, .base0A, .base0B, .base0C, .base0D, .base0E, .base0F {
+		
 	}
 }
 
@@ -108,7 +174,6 @@ div.content {
 	background-image: linear-gradient(top, rgb(245, 245, 245), rgb(192, 192, 192)) !important;
 	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#f5f5f5', EndColorStr='#c0c0c0') !important;	
 }
-
 input[type="number"] {
 	text-indent: 3px;
 	border-radius: 2px;

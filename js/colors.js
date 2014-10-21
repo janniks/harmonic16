@@ -14,6 +14,7 @@ function updateLabels() {
 function refresh() {
 	//generate and output
 	output(generate());
+	preview(generate());
 }
 
 function output(holder) {
@@ -180,4 +181,39 @@ function makeSass() {
 	//file
 	var blob = new Blob([text], {type: "text/plain;charset=utf-8"});
 	saveAs(blob, "_colors.scss");
+}
+
+//Preview colors
+function preview(holder) {
+	// preview1
+	$("div.preview.preview1").css("background-color", holder[0][7]);
+	$("div.preview.preview1").css("border-color", holder[0][5]);
+	$("div.preview-pop.preview1").css("background-color", holder[0][6]);
+	$("div.preview-pop.preview1").css("border-color", holder[0][4]);
+	$("div.preview-header.preview1").css("border-color", holder[0][4]);
+	$("div.preview-header.preview1").css("color", holder[0][3]);
+	$("div.preview-content.preview1").css("border-color", holder[0][4]);
+	$("div.preview-content.preview1").css("background-color", holder[0][7]);
+	$("div.preview-content.preview1").css("color", holder[0][2]);
+	$("button.preview-accept.preview1").css("border-color", holder[0][4]);
+	$("button.preview-accept.preview1").css("color", holder[0][3]);
+	$("button.preview-deny.preview1").css("border-color", holder[0][4]);
+	$("button.preview-deny.preview1").css("background-color", holder[0][4]);
+	$("button.preview-deny.preview1").css("color", holder[0][2]);
+
+	// preview2
+	$("div.preview.preview2").css("background-color", holder[0][4]);
+	$("div.preview.preview2").css("border-color", holder[0][3]);
+	$("div.preview-pop.preview2").css("background-color", holder[0][5]);
+	$("div.preview-pop.preview2").css("border-color", holder[0][3]);
+	$("div.preview-header.preview2").css("border-color", holder[0][3]);
+	$("div.preview-header.preview2").css("color", holder[0][3]);
+	$("div.preview-content.preview2").css("border-color", holder[0][4]);
+	$("div.preview-content.preview2").css("background-color", holder[0][7]);
+	$("div.preview-content.preview2").css("color", holder[0][2]);
+	$("button.preview-accept.preview2").css("border-color", holder[0][4]);
+	$("button.preview-accept.preview2").css("color", holder[0][3]);
+	$("button.preview-deny.preview2").css("border-color", holder[0][4]);
+	$("button.preview-deny.preview2").css("background-color", holder[0][4]);
+	$("button.preview-deny.preview2").css("color", holder[0][2]);
 }
